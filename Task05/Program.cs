@@ -4,5 +4,10 @@
 Console.WriteLine("Введите трехзначное число");
 
 int a = int.Parse(Console.ReadLine());
-
-Console.WriteLine(a % 10);
+if (a < 0) a *= -1;
+if (a <= 100 || a >= 999)
+{
+    int lastA = a % 10;
+    Console.WriteLine($"Последняя цифра числа {a} => {lastA}");
+}
+else Console.WriteLine("Некорректный ввод!");
