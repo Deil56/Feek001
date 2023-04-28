@@ -15,7 +15,7 @@ Table(number);
 
 void Table(int num)
 {
-    int count =1;
+    int count = 1;
     while (count <= num)
     {
         Console.WriteLine($"{count,3} {count * count, 5}");

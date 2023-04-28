@@ -7,7 +7,7 @@ Console.WriteLine("Введите заданный номер четверти")
 int Coordinate = Convert.ToInt32(Console.ReadLine());
 
 string range = Range(Coordinate);
-string result = range != null
+string result = range != "0"
                 ? $"Заданный номер четверти показывает диапазон -> {range}"
                 : "Введен некорректный ввод";
 Console.WriteLine(result);
@@ -18,5 +18,5 @@ string Range( int numb)
     if (numb == 2) return "x < 0, y > 0";
     if (numb == 3) return "x < 0, y < 0";
     if (numb == 4) return "x > 0, y < 0";
-    return null;
+    return "0";
 }
